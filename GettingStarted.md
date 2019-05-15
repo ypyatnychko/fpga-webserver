@@ -113,6 +113,18 @@ From this ssh shell, you can launch X applications that will display on your loc
 
 ### RDP
 
+In Remmina Remote Desktop Client
+
+1) Create a new remote desktop file
+2) Fill in
+  a) Name        <appropriate name>
+  b) Server      <IPv4 Public IP>
+  c) User name   centos
+  d) Password    <password generated setup_gui.sh script>
+3) In the Advanced tab, change Security from "Negotiate" to "RDP"
+4) Connect
+  
+
 Next you will continue through **2. Connecting to the Instance with a remote desktop client**. (In case you got lost, that's <a href="https://github.com/Xilinx/SDAccel-Tutorials/blob/master/docs/aws-getting-started/RTL/STEP1.md#2-connecting-to-the-instance-with-a-remote-desktop-client" target="_blank">here</a>.)
 
 The `curl` command in these instructions produces a great deal of output, and there were a couple of issues the first time I tried it. It would be wise to capture the output by appending ` 2>&1 | tee /tmp/rdp_curl.log` onto the command.
